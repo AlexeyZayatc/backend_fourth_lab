@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    <title> Дамп базы данных </title>
+    <link rel="stylesheet" href="styles.css">
+    {% import "macros.html" as macro %}
+</head>
+
+<body>
+    {% for index,table_name in enumerate(tables) %}
+    <div>
+        {{ macro.render_table(table_name,relations[index]) }}
+    </div>
+    {% endfor %}
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+div {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+table {
+    margin: 20px 5px;
+}
+
+table td,
+th {
+    padding: 5px 10px;
+    border: thin solid grey;
+}
+
+table tr:first-child {
+    background: LightGrey;
+}
